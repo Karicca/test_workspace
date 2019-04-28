@@ -1,0 +1,23 @@
+/*
+ * CSS also comes here
+ */
+
+body {
+    padding: 50px;
+    font-family: helvetica, arial, sans-serif;
+    background: rgb(226, 226, 226);
+}
+
+a {
+    color: red;
+}
+
+.my-paragraph {
+    font-style: italic;
+}
+
+/* HOMEWORK
+make chai image 30% high using css
+add some styling/variouse elements of css
+maybe check different type of css selectors
+*/
