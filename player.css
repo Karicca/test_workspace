@@ -1,0 +1,56 @@
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+button {
+	appearance: none;
+	font: inherit;
+	background: none;
+	border: none;
+	color: inherit;
+}
+
+.player-wrapper {
+	display: flex;
+	background: #111;
+	width: 850px;
+}
+
+.player-media {
+	padding: 10px 0 10px 10px;
+}
+
+.player-playlist {
+	flex: 1;
+	height: 315px;
+	padding: 10px;
+	overflow: auto;
+	color: #eee;
+}
+
+.player-playlist button {
+	width: 100%;
+	padding: 20px 10px;
+	margin-bottom: 5px;
+	background: #1a1a1a;
+	text-align: left;
+	border-radius: 3px;
+}
+
+.player-playlist button:hover {
+	background: #333;
+	cursor: pointer;
+}
+
+.player-playlist button:focus {
+	outline: none;
+	box-shadow: 0 0 8px hotpink;
+	background: #333;
+}
+
+.player-playlist button:active {
+	box-shadow: 0 0 4px hotpink;
+	background: #222;
+}

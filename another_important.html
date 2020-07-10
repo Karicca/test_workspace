@@ -5,6 +5,7 @@
         <title>Karicca's blog</title>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="my-style.css" />
+        <link rel="stylesheet" href="player.css" />
     </head>
     <body>
         <a href="https://dribbble.com/karicca" target="_blank"><img src="https://cdn.dribbble.com/users/3289568/avatars/small/0731561d652feac2d540db229e53edf5.png?1551780886" alt="Me" title="You want to see my Dribbble? Of course!"></a>
@@ -17,6 +18,22 @@
         
         <h3>Grr</h3>
         <p>Moikka</p>
+
+        <div class="player-wrapper" id="player">
+
+            <iframe id="player-media" class="player-media" width="560" height="315" src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            <ul class="player-playlist">
+                <li><button data-video-id="5qap5aO4i9A">Lofi hip hop</button></li>
+                <li><button data-video-id="36YnV9STBqc">The Good Life</button></li>
+                <li><button data-video-id="5yx6BWlEVcY">Chillhop</button></li>
+                <li><button data-video-id="-5KAN9_CzSA">Coffee shop</button></li>
+                <li><button data-video-id="oVi5gtzTDx0">Indie / Bedroom</button></li>
+                <li><button data-video-id="eh_W6IcbD98">Friday Jazz</button></li>
+                <li><button data-video-id="_3rV0fLMfKw">Cafe Jazz</button></li>
+            </ul>
+
+        </div>
         
         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5qap5aO4i9A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         
@@ -27,5 +44,7 @@
         <p>Moikka</p>
         
         <hr />
+
+    <script type="text/javascript" src="player.js"></script>
     </body>
 </html>
