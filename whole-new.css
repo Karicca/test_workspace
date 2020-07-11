@@ -1,0 +1,66 @@
+:root {
+	--wood-color: hsl(25, 65.9%, 21%);
+}
+
+body {
+	margin: 0;
+	height: 100vh;
+}
+
+.scene {
+	position: relative;
+	height: 100%;
+}
+
+.wall {
+	height: 100%;
+	background: url('./wall.jpg');
+	box-shadow: inset 0 -20vh 50vmin rgba(0, 0, 0, .8);
+}
+
+.bookshelf {
+	position: absolute;
+	top: 50%;
+	right: 20%;
+	width: 30vw;
+	height: 2vw;
+	background: var(--wood-color);
+}
+
+.table {
+	position: absolute;
+	bottom: 0%;
+	left: 10%;
+	width: 80%;
+	height: 20%;
+	background: var(--wood-color);
+}
+
+.table-candle {
+	position: absolute;
+	top: -10%;
+	left: 20%;
+	transform: translate(-50%, -50%);
+	width: 20%;
+	height: 70%;
+}
+
+.table-candle-flame-outer {
+	animation: candle-flame-outer 1s .1s infinite;
+}
+
+.table-candle-flame-inner {
+	animation: candle-flame-inner 1s infinite;
+}
+
+@keyframes candle-flame-outer {
+	50% {
+		transform: scale(1.1, 1.3) translate(-5%, -20%);
+	}
+}
+
+@keyframes candle-flame-inner {
+	50% {
+		transform: scale(1.1, 1.5) translate(-5%, -20%);
+	}
+}
